@@ -43,28 +43,21 @@ h1 {
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
   background: rgba(0, 0, 0, 0.1);
-  border: solid 2px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(90px);
-  padding-bottom: 4rem;
-
 }
 
 button {
-  bottom: 18%;
+  bottom: 10%;
   position: absolute;
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
-  border: 2px solid red;
   border-radius: 0.6em;
-  color: red;
   cursor: pointer;
   display: flex;
-  align-self: center;
   font-size: 3rem;
-  font-weight: 400;
   line-height: 1;
-  margin: 50px;
+  margin: 20px;
   padding: .1em .4em;
   text-decoration: none;
   text-align: center;
@@ -79,6 +72,7 @@ button {
   }
 }
 
+
 .Enter {
   border-color: #051046;
   color: #fff;
@@ -87,27 +81,26 @@ button {
 
   &:hover {
     box-shadow: 0 0 10px 0 #051046 inset, 0 0 10px 4px #051046;
+    transform: scale(1);
   }
 }
 
-@media (max-width: 900px) {
-   button {
-    bottom: 2rem;
-   }
-}
 
 @media (max-width: 768px) {
   button {
-    bottom: 1rem;
+    font-size: 2rem;
   }
 
 }
 
 @media (max-width: 480px) {
-  
-}
+  h1 {
+    top: 0;
+    font-size: 2.5rem;
+  }
 
-
-@media (max-width: 320px) {
-  
+  button {
+    font-size: 1.7rem;
+    bottom: 5%;
+  }
 }
